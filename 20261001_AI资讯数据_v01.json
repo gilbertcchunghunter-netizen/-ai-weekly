@@ -1,0 +1,462 @@
+{
+  "edition": "2026-10-01",
+  "timezone": "Asia/Shanghai",
+  "checkedAt": "2026-10-01T19:47:32+08:00",
+  "collectionWindow": "2026-09-30 至 2026-10-01；来源日期沿用原文，不假定其时区",
+  "scope": "本期7条：1条按公告今日生效提醒、6条9月30日发布动态；本轮未取得日期明确为10月1日的新发布官方消息。",
+  "policy": {
+    "layers": [
+      "官方公告、研究与代码仓库负责事实核验",
+      "专业媒体负责发现与背景补充",
+      "社区与社交平台负责线索与反馈"
+    ],
+    "languages": [
+      "中文",
+      "英文"
+    ],
+    "targetCount": [
+      5,
+      8
+    ],
+    "domesticTarget": "优先争取3至4条国内相关；以证据和新颖性为准",
+    "deduplicate": "按独立事件与原始来源去重；授权转载不计独立交叉来源",
+    "timeRules": [
+      "采集时间、发布日期、事件或生效时间分列",
+      "优先近两日；如扩展更早日期，必须另行标记",
+      "仅有日期时不推算原文时区"
+    ],
+    "verificationRules": [
+      "原文正文已取得才可标官方原文已核对",
+      "官方能力声明不等于独立测评",
+      "读取失败按具体页面记录；不推断登录、封禁或反爬原因",
+      "匿名消息未获得官方确认则不进入已确认精选"
+    ],
+    "automation": "本文件是人工辅助检索与核验的静态期刊数据，不是自动采集服务"
+  },
+  "stories": [
+    {
+      "id": "tencent-translation",
+      "company": "腾讯云",
+      "region": "中国",
+      "category": "服务调整",
+      "accent": "teal",
+      "publishedDate": null,
+      "eventDate": "2026-10-01",
+      "timeLabel": "10 月 1 日 · 按公告今日生效",
+      "window": "今日生效",
+      "title": "腾讯云机器翻译调整调用限额与免费资源包",
+      "background": "腾讯云调整传统机器翻译服务的资源配置，开发者需要关注现有接口的调用额度。",
+      "content": "按官方公告，10 月起至 2027 年 1 月，相关接口的 QPS 限制每月在上月基础上缩减 5%；10 月 1 日起停止发放新的免费资源包，已领取的资源包在有效期内仍可使用。",
+      "evidence": "官方公告已核对",
+      "readStatus": "正文已取得",
+      "dateNote": "公告未展示发布日期；10 月 1 日是生效日期。未调用实际接口确认执行状态。",
+      "limitation": "公告中的大模型文本翻译产品仍为拟上架，不能写成已经上线。QPS 指每秒允许的请求数。",
+      "discovery": [
+        {
+          "name": "腾讯云公告",
+          "url": "https://cloud.tencent.com/announce/detail/2448",
+          "role": "官方公告"
+        }
+      ],
+      "verification": [
+        {
+          "name": "腾讯云原始公告",
+          "url": "https://cloud.tencent.com/announce/detail/2448",
+          "role": "官方原文"
+        }
+      ]
+    },
+    {
+      "id": "deepseek-ascend",
+      "company": "DeepSeek",
+      "region": "中国",
+      "category": "开源基础设施",
+      "accent": "blue",
+      "publishedDate": "2026-09-30",
+      "eventDate": "2026-09-30",
+      "timeLabel": "9 月 30 日 · 官方仓库首次发布",
+      "window": "昨日发布",
+      "title": "DeepSeek 开源昇腾计算与通信组件",
+      "background": "大模型适配不同硬件，除了模型权重，还需要计算内核与分布式通信软件。",
+      "content": "官方仓库公开 DeepGEMM-Ascend 和 DeepEP-Ascend，分别支持昇腾平台的矩阵计算与通信。DeepGEMM-Ascend 的更新记录确认 9 月 30 日首次发布，并列出 Ascend 950 支持。",
+      "evidence": "官方代码仓库已核对",
+      "readStatus": "正文已取得",
+      "dateNote": "首次发布时间来自仓库 README；发现报道的时间为 9 月 30 日 16:48。原始仓库日期未注明时区。",
+      "limitation": "未部署或测试性能；组件开源不能推导为全部训练流程已摆脱其他硬件。",
+      "discovery": [
+        {
+          "name": "腾讯科技 · 36氪授权转载",
+          "url": "https://www.36kr.com/p/4005634131349637",
+          "role": "中文媒体发现线索；公众号原文读取失败"
+        }
+      ],
+      "verification": [
+        {
+          "name": "DeepGEMM-Ascend",
+          "url": "https://github.com/deepseek-ai/DeepGEMM-Ascend",
+          "role": "官方仓库"
+        },
+        {
+          "name": "DeepEP-Ascend",
+          "url": "https://github.com/deepseek-ai/DeepEP-Ascend",
+          "role": "官方仓库"
+        }
+      ]
+    },
+    {
+      "id": "ling-gateway",
+      "company": "蚂蚁 · InclusionAI",
+      "region": "中国",
+      "category": "模型接入",
+      "accent": "rose",
+      "publishedDate": "2026-09-30",
+      "eventDate": "2026-09-30",
+      "timeLabel": "9 月 30 日 · 平台上线公告",
+      "window": "昨日发布",
+      "title": "Ling 3.1 Flash 上线 Vercel AI Gateway",
+      "background": "InclusionAI 的 Ling 系列模型扩展开发者接入渠道，面向编码、多步分析与工具调用。",
+      "content": "Vercel 官方更新确认 Ling 3.1 Flash 已进入 AI Gateway，平台当前提供 262K token 上下文。本条收录的是接入平台的公告，未将媒体中的后续计划写成已交付能力。",
+      "evidence": "接入平台官方公告已核对",
+      "readStatus": "正文已取得",
+      "dateNote": "Vercel 更新日志标注 9 月 30 日，未注明精确时刻与时区；不是 10 月 1 日发布模型。",
+      "limitation": "未实际调用 API 或测评；平台当前上下文不能与媒体提及的后续 1M 计划混用，也未确认模型权重已开源。",
+      "discovery": [
+        {
+          "name": "TechNode 报道",
+          "url": "https://technode.com/2026/09/30/ant-group-launches-ling-3-1-flash-with-560-billion-parameters/",
+          "role": "媒体正文已取得；链接 IT之家"
+        }
+      ],
+      "verification": [
+        {
+          "name": "Vercel AI Gateway 官方更新",
+          "url": "https://vercel.com/changelog/ling-3-1-flash-is-now-available-on-ai-gateway",
+          "role": "平台官方原文"
+        }
+      ]
+    },
+    {
+      "id": "google-argon",
+      "company": "Google",
+      "region": "国际",
+      "category": "模型发布",
+      "accent": "violet",
+      "publishedDate": "2026-09-30",
+      "eventDate": "2026-09-30",
+      "timeLabel": "9 月 30 日 · 官方发布",
+      "window": "昨日发布",
+      "title": "Gemini 4 Argon 发布，先向受信网络防御者开放",
+      "background": "Google 推进面向持续推理、软件工程与企业知识工作的 Gemini 模型。",
+      "content": "Google 宣布通过 Fairwind Program 分阶段开放 Argon，并称输出 Token 上限扩展至 100 万。后续公众扩展将先面向付费 API 客户和 Google AI Ultra 订阅者，尚未给出明确日期。",
+      "evidence": "官方发布已核对",
+      "readStatus": "正文已取得",
+      "dateNote": "原文日期为 9 月 30 日，未注明具体时间和时区；社区相对时间不作为发布日期。",
+      "limitation": "当前是受限开放，不能写成全面上线；模型能力及输出上限属于官方声明，未独立实测。",
+      "discovery": [
+        {
+          "name": "Hacker News · 9/30 UTC 榜单",
+          "url": "https://news.ycombinator.com/front",
+          "role": "社区发现线索"
+        },
+        {
+          "name": "Google DeepMind 新闻",
+          "url": "https://deepmind.google/blog/",
+          "role": "官方列表"
+        }
+      ],
+      "verification": [
+        {
+          "name": "Google 官方发布",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/?utm_campaign=gdm&utm_content=&utm_medium=referral&utm_source=deepmind.google",
+          "role": "官方正文；从官方列表跳转成功"
+        }
+      ]
+    },
+    {
+      "id": "microsoft-registry",
+      "company": "Microsoft",
+      "region": "国际",
+      "category": "企业应用",
+      "accent": "amber",
+      "publishedDate": "2026-09-30",
+      "eventDate": "2026-09-30",
+      "timeLabel": "9 月 30 日 · 官方发布",
+      "window": "昨日发布",
+      "title": "Copilot 插件注册表开始逐步上线",
+      "background": "随着技能、连接器和代理增多，企业需要统一的插件发现、审批与分配入口。",
+      "content": "Microsoft 推出统一插件注册表，管理员可集中批准和分配插件。当前覆盖受支持的 Copilot 与 Microsoft 365 体验；Copilot Studio、GitHub Copilot 和 Microsoft Foundry 支持仍属未来计划。",
+      "evidence": "官方产品博客已核对",
+      "readStatus": "正文已取得",
+      "dateNote": "原文发布及更新日期均为 9 月 30 日，未注明时区；上线是逐步进行的过程。",
+      "limitation": "部分连接器仍在部署中；未登录租户实测，不代表所有用户或产品已经可用。",
+      "discovery": [
+        {
+          "name": "Microsoft Copilot Blog",
+          "url": "https://techcommunity.microsoft.com/category/microsoft-copilot/blog/microsoft-copilot-blog",
+          "role": "官方产品博客列表"
+        }
+      ],
+      "verification": [
+        {
+          "name": "Microsoft 插件注册表公告",
+          "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/introducing-the-plugin-registry---one-place-to-discover-and-govern-plugins-for-m/4559682",
+          "role": "官方正文"
+        }
+      ]
+    },
+    {
+      "id": "anthropic-robots",
+      "company": "Anthropic",
+      "region": "国际",
+      "category": "研究观察",
+      "accent": "rose",
+      "publishedDate": "2026-09-30",
+      "eventDate": "2026-09-30",
+      "timeLabel": "9 月 30 日 · 研究发表",
+      "window": "昨日发布",
+      "title": "机器人能做多少工作？研究区分能力与经济可行性",
+      "background": "Anthropic 结合美国职业任务资料与 Claude 辅助分析，研究机器人的任务覆盖范围。",
+      "content": "研究估计，在特定条件下机器人可完成约 74% 的体力任务，对应全部工作时间的 34%；但当前具成本竞争力的任务仅对应全部工作时间约 0.3%。这些数值属于作者的研究估计。",
+      "evidence": "原始研究已核对",
+      "readStatus": "正文已取得",
+      "dateNote": "研究原文标注 9 月 30 日，未给出具体时间或时区。",
+      "limitation": "任务暴露不等于岗位被替代；结果依赖能力评级、成本和环境假设，不能视为实际就业预测。",
+      "discovery": [
+        {
+          "name": "Anthropic 研究原文",
+          "url": "https://www.anthropic.com/research/what-work-can-robots-do",
+          "role": "官方研究定向检索"
+        }
+      ],
+      "verification": [
+        {
+          "name": "Anthropic 研究与论文入口",
+          "url": "https://www.anthropic.com/research/what-work-can-robots-do",
+          "role": "原始研究"
+        }
+      ]
+    },
+    {
+      "id": "openai-distillation",
+      "company": "OpenAI",
+      "region": "国际",
+      "category": "模型安全",
+      "accent": "slate",
+      "publishedDate": "2026-09-30",
+      "eventDate": "2026-07",
+      "timeLabel": "9 月 30 日 · 安全报告发布",
+      "window": "昨日发布",
+      "title": "OpenAI 披露针对受保护推理的提取活动与防护措施",
+      "background": "模型内部推理的保护与未经授权的蒸馏，正在成为模型服务的安全议题。",
+      "content": "OpenAI 报告称，7 月发现并处置了一组协调提取受保护推理的活动，随后加强账号处置、技术防护及行业协作。报告表示，该事件不涉及直接访问已存储的用户对话。",
+      "evidence": "官方安全报告已核对",
+      "readStatus": "正文已取得",
+      "dateNote": "9 月 30 日是报告发布日期；报告描述的活动发生在 7 月，不是今天发生的新攻击。",
+      "limitation": "事件及调查结论属于 OpenAI 的披露；本页未独立取证验证活动规模或归因。",
+      "discovery": [
+        {
+          "name": "OpenAI News",
+          "url": "https://openai.com/news/",
+          "role": "官方新闻列表"
+        }
+      ],
+      "verification": [
+        {
+          "name": "OpenAI 安全报告",
+          "url": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign/",
+          "role": "官方正文"
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "group": "国内官方",
+      "name": "腾讯云",
+      "url": "https://cloud.tencent.com/announce/detail/2448",
+      "status": "正文已取得",
+      "result": "收录 10 月 1 日生效的翻译服务调整。"
+    },
+    {
+      "group": "国内官方",
+      "name": "DeepSeek GitHub",
+      "url": "https://github.com/deepseek-ai/DeepGEMM-Ascend",
+      "status": "正文已取得",
+      "result": "核对计算与通信组件；首次发布日期来自仓库。"
+    },
+    {
+      "group": "平台官方",
+      "name": "Vercel · Ling 接入公告",
+      "url": "https://vercel.com/changelog/ling-3-1-flash-is-now-available-on-ai-gateway",
+      "status": "正文已取得",
+      "result": "确认国内模型 Ling 的平台接入事件及 262K 上下文。"
+    },
+    {
+      "group": "国内官方",
+      "name": "百度 AI 开放平台",
+      "url": "https://ai.baidu.com/support/news?module=AIOfficialWeb&tag=13",
+      "status": "列表已取得",
+      "result": "本轮未取得符合本期时窗的新事件；不等于百度没有新消息。"
+    },
+    {
+      "group": "国内媒体",
+      "name": "腾讯科技 / 36氪",
+      "url": "https://www.36kr.com/p/4005634131349637",
+      "status": "授权转载已取得",
+      "result": "公众号内容经授权转载页读取；DeepSeek 事实另回官方仓库核验。"
+    },
+    {
+      "group": "国内媒体",
+      "name": "机器之心",
+      "url": "https://www.jiqizhixin.com/industry",
+      "status": "列表已取得",
+      "result": "追查 TeleOCR 原始日期后，排除“9/30 首次开源”的解读。"
+    },
+    {
+      "group": "国内媒体",
+      "name": "智东西",
+      "url": "https://www.zhidx.com/",
+      "status": "首页已取得",
+      "result": "本轮未取得符合本期时窗、适合收录的新条目。"
+    },
+    {
+      "group": "国内媒体",
+      "name": "量子位",
+      "url": "https://www.qbitai.com/",
+      "status": "本次读取失败",
+      "result": "工具返回 Internal Error；未取得正文，原因未确定。"
+    },
+    {
+      "group": "中文媒体",
+      "name": "IT之家 · Ling 报道",
+      "url": "https://www.ithome.com/1/008/907.htm",
+      "status": "仅搜索索引",
+      "result": "搜索显示 9/30 20:43:48；直接读取两次超时，未视为正文已读。"
+    },
+    {
+      "group": "科技媒体",
+      "name": "TechNode · Ling 报道",
+      "url": "https://technode.com/2026/09/30/ant-group-launches-ling-3-1-flash-with-560-billion-parameters/",
+      "status": "正文已取得",
+      "result": "提供蚂蚁模型的发现线索；接入事实再回 Vercel 核验。"
+    },
+    {
+      "group": "国内社区",
+      "name": "知乎 · DSec 候选",
+      "url": "https://zhuanlan.zhihu.com/p/2088265189233779592",
+      "status": "本次读取失败",
+      "result": "原文返回 Internal Error；转载日期不能替代研究首次发表日期。"
+    },
+    {
+      "group": "国内社区",
+      "name": "微博 · DeepSeek 候选",
+      "url": "https://weibo.com/2/detail/5349189153721558",
+      "status": "仅搜索索引",
+      "result": "直接读取返回 Internal Error；未采用帖子中的未经核实数据。"
+    },
+    {
+      "group": "国内社区",
+      "name": "微信公众号 · 机器之心候选",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651059405&idx=2&sn=2d88de779de08ba3d0d4df0685da3fb8",
+      "status": "本次读取失败",
+      "result": "原文无法打开；转载为较早文章，未计入本期资讯。"
+    },
+    {
+      "group": "国内社区",
+      "name": "微信公众号 · 腾讯科技",
+      "url": "https://mp.weixin.qq.com/s/K2vkKvtzrQlxvbqL-IvJIQ",
+      "status": "授权转载可读",
+      "result": "原文直开失败；36氪授权转载可读。开源事实经官方仓库核验。"
+    },
+    {
+      "group": "国际官方",
+      "name": "OpenAI",
+      "url": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign/",
+      "status": "正文已取得",
+      "result": "收录安全报告；区分报告日期与事件日期。"
+    },
+    {
+      "group": "国际官方",
+      "name": "Google DeepMind",
+      "url": "https://deepmind.google/blog/",
+      "status": "列表与原文已取得",
+      "result": "从官方列表进入 Argon 公告；标明受限开放。"
+    },
+    {
+      "group": "国际官方",
+      "name": "Microsoft Copilot Blog",
+      "url": "https://techcommunity.microsoft.com/category/microsoft-copilot/blog/microsoft-copilot-blog",
+      "status": "列表与原文已取得",
+      "result": "收录插件注册表；区分上线中与未来支持。"
+    },
+    {
+      "group": "国际官方",
+      "name": "Anthropic",
+      "url": "https://www.anthropic.com/research/what-work-can-robots-do",
+      "status": "正文已取得",
+      "result": "收录机器人研究；将数字标为作者估计。"
+    },
+    {
+      "group": "国际媒体",
+      "name": "Axios",
+      "url": "https://www.axios.com/2026/09/30/google-gemini-4",
+      "status": "正文已取得",
+      "result": "交叉确认 Google 发布线索；关键产品信息引用官方。"
+    },
+    {
+      "group": "国际媒体",
+      "name": "TechCrunch",
+      "url": "https://techcrunch.com/2026/09/30/reddit-is-killing-rss-feeds-ending-public-api-access-because-of-ai-bots/",
+      "status": "正文已取得",
+      "result": "取得 9/30 媒体文章，本期按公司重点未收录。"
+    },
+    {
+      "group": "国际媒体",
+      "name": "The Verge",
+      "url": "https://www.theverge.com/tech/1002665/google-paying-publishers-ai-search-features",
+      "status": "本次读取失败",
+      "result": "工具返回 Internal Error；未将标题升级为已核验事实。"
+    },
+    {
+      "group": "国际媒体",
+      "name": "Reuters",
+      "url": null,
+      "status": "未取得合格原文",
+      "result": "完成目标日期定向检索；没有可供本期引用的可读原文。"
+    },
+    {
+      "group": "国际社区",
+      "name": "Hacker News",
+      "url": "https://news.ycombinator.com/front",
+      "status": "榜单已取得",
+      "result": "榜单为 9/30 UTC；用于发现 Argon。具体讨论直接读取失败。"
+    },
+    {
+      "group": "国际社区",
+      "name": "Reddit · Argon 讨论",
+      "url": "https://www.reddit.com/r/singularity/comments/1wufeu8/introducing_gemini_4_argon/",
+      "status": "讨论正文已取得",
+      "result": "作为公众讨论线索，产品事实回 Google 核验；相对时间不用作发布日期。"
+    }
+  ],
+  "excludedOrCorrected": [
+    {
+      "title": "TeleOCR：媒体报道日期不等于首次开源日期",
+      "reason": "官方项目记录：8 月 17 日已发布前身 NaviDC-OCR 权重，9 月 10 日更名。未将 9 月 30 日报道当作新开源。",
+      "url": "https://github.com/caipeng328/TeleOCR",
+      "source": "项目原始记录"
+    },
+    {
+      "title": "元宝个人智能体：未计入已确认资讯",
+      "reason": "字母榜在 36氪的授权转载引用匿名信源，产品形态与时间未定，未获得腾讯官方确认。",
+      "url": "https://www.36kr.com/p/4005697602228358",
+      "source": "媒体报道"
+    },
+    {
+      "title": "Gems：移入设置不等于立即停用",
+      "reason": "官方迁移公告区分界面调整与停止支持：11 月 17 日移入设置，企业客户停止支持不早于 2027 年 3 月 1 日。",
+      "url": "https://workspaceupdates.googleblog.com/2026/09/skills-gemini-app-workspace.html",
+      "source": "Google Workspace 公告"
+    }
+  ]
+}
